@@ -1,0 +1,250 @@
+/*Styling the html*/
+body {
+    font-family: 'Nunito', sans-serif;/*using google font*/
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /*Adding pic*/
+    background-image: url('pics/header_pic.webp'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+/*postioning the logo*/
+.logo {
+    position: absolute;
+    left: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.title {
+    text-align: center;/*aligning the text in the center*/
+}
+
+.title h1 {
+    font-family: 'pacifico', cursive;
+    font-size: 3rem;
+    margin-bottom: 5px; 
+    margin-top: 0;
+}
+
+.title h2 {
+    font-family: 'Open Sans', sans-serif; /* Adding a font */
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: lowercase;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+/*video section*/
+.video-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0044cc;
+    margin-top: 10px;
+}
+
+/* Clickable Thumbnail */
+.video-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* YouTube Thumbnail as Background */
+.video-background {
+    display: block;
+    width: 560px;
+    height: 315px;
+    background: url("https://img.youtube.com/vi/gset79KMmt0/maxresdefault.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Play Button Overlay */
+.video-background::after {
+    content: "▶";
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect */
+.video-link:hover .video-background::after {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*Lyrics section*/
+.lyrics {
+    position: relative;
+    background-image: url('pics/background.webp'); /* adding background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    overflow: hidden; /* Prevent overflow outside the section */
+}
+
+.lyrics-heading {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.8rem; 
+    font-weight: bold; /* Make it bold */
+    color: transparent; /* Fallback for gradient text */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase; /* Makes text uppercase */
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #133fce, #2a0b8a); /* Gradient text effect */
+    -webkit-background-clip: text;
+    background-clip: text; /* Standard property for better support */
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(99, 23, 206, 0.3); /* Soft shadow */
+    position: relative; /* For potential decorations */
+    padding-bottom: 10px;
+}
+
+/* Add an underline animation */
+.lyrics-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, #6317ce, #9a41ff);
+    border-radius: 5px;
+    animation: expandUnderline 1s ease-in-out;
+}
+
+/* Underline animation */
+@keyframes expandUnderline {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+/* Styling for the text inside the background */
+.lyrics-content {
+    position: relative;
+    z-index: 1; /* Keeps the text in front */
+    text-align: center;
+    color: #110445; 
+    font-family:'Dancing Script', cursive; /* adding a font */
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-shadow: 2px 2px 8px rgba(9, 29, 158, 0.6); /* Enhances readability */
+    max-width: 90%; /* Prevents text from overflowing */
+    margin: 0 auto; /* Centers the content */
+    padding: 0 20px; /*adds spacing around the text */
+    overflow-y: auto; 
+    max-height: 70vh; 
+    background: rgba(204, 221, 226, 0.8);
+}
+.lyrics-content span.highlight {
+    color: #ae1d29;
+    font-weight: bold;
+    background-color: rgba(98, 62, 190, 0.2); 
+    padding: 2px 5px; /* Space around the highlighted text */
+    border-radius: 3px; /* Rounded highlight */
+    text-shadow: none;
+    font-family:'Dancing Script', cursive; /* adding a font */
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-shadow: 2px 2px 8px rgba(9, 29, 158, 0.6); /* Enhances readability */
+    max-width: 80%;
+}
+/* Add subtle animation to the lyrics */
+.lyrics-content p {
+    font-family:'roboto',sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .lyrics-content {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+.highlight {
+    color: #FF6F61;
+    font-style: italic;
+    font-weight: bold;
+}
+/*adding footer img and positioning the text*/
+footer {
+    position: relative;
+    background-image: url('pics/header_pic.webp'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center; 
+    color: rgb(238, 238, 239); 
+    padding: 15px 0;
+    height: 150px; 
+    display: flex;
+justify-content: center; 
+align-items: center;
+
+}
+
+footer p {
+    font-size: 2.5rem; 
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    z-index: 1; /* Keeps text on top of the background image */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adds text shadow for better readability */
+}
+
