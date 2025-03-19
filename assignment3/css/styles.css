@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    color: white;
+}
+
+/* Header CSS */
+header {
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* About Section CSS */
+.about {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    max-width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Responsive Two-Column Layout */
+@media (min-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/*nutrition section*/
+.nutrition table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nutrition th, .nutrition td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.nutrition th {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+.nutrition tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Gallery Section */
+.gallery-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery-section h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+}
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;  
+    object-fit: cover; /* Ensures images fit without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #d32f2f; /* KitKat red */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space between text and logo */
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.logo img {
+    max-width: 150px; /* Adjust logo size */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: white;
+    color: #d32f2f;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #ffcccb;
+}
+
