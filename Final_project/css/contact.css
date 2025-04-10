@@ -1,0 +1,127 @@
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D4AFB9;
+    color: #5f1736; 
+}
+
+/* Header */
+header {
+    background-color: #ae6b9a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #F9D5BB;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #F9D5BB;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #57429b;
+}
+/* Contact Page Styles */
+.contact-section {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: #f9d5bb; 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #5f1736;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #57429b;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #5f1736;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; 
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #c7a3cb;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Form Button */
+.contact-form button {
+    align-self: center;
+    width: fit-content;
+    background-color: #ae6b9e;
+    color: #F9D5BB;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #57429b;
+    color: white;
+    transform: scale(1.05);
+}
+
+main {
+    flex: 1; /* Makes main section take up the remaining space */
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #FFF5E1;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}

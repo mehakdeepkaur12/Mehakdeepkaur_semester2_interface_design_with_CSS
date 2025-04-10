@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D4AFB9; 
+    color: #5f1736; 
+}
+
+/* Header */
+header {
+    background-color: #ae6b9a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #F9D5BB;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #F9D5BB;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #57429b;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../img/Backgroung_home.jpeg') no-repeat center center/cover;
+    height: 90vh;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Genres Section */
+.genre:hover {
+    transform: scale(1.1);
+    background: #866dd6;
+    color: white;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Newsletter Signup */
+.newsletter {
+    background: #F7E1D7;
+    text-align: center;
+    padding: 50px;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #ae6b9a;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    background: #ae6b9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #57429b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-family: 'Lora', serif;
+    color: #F9D5BB; 
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #FFB6A3; 
+}
+
+.btn {
+    background: #ae6b9e; 
+    color: #F9D5BB;
+    padding: 14px 28px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #57429b; 
+    color: #F9D5BB;
+    transform: scale(1.1);
+}
+
+/* Featured Books Section */
+.bestsellers {
+    background: #57429b; 
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.bestsellers h2 {
+    font-size: 2.8rem;
+    font-family: 'Lora', serif;
+    color: #F9D5BB;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.book {
+    width: 250px;
+    background: #ae6b9a;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: scale(1.08);
+}
+
+.book img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Genres Section */
+.genres {
+    background: #F4B6C2; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.genre-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.genre {
+    background: #F4B6C2; 
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+}
+
+.genre:hover {
+    transform: scale(1.1);
+    background: #866dd6; 
+    color: white;
+}
+
+
+.testimonials {
+    background: #F7E1D7; 
+    padding: 50px;
+    text-align: center;
+}
+
+.review {
+    background: #dd82ab;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 500px; /* Ensure reviews don't stretch too wide */
+    color: #114B5F;
+    font-style: italic;
+    transition: transform 0.3s;
+}
+
+.review span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4A2C2A;
+}
+
+.review:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .book-grid, .genre-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* Footer */
+footer {
+    background: #222; /* Dark background */
+    color: #FFF5E1; /* Light text */
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}

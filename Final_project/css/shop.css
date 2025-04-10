@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D4AFB9;
+    color: #5f1736;
+}
+
+/* Header */
+header {
+    background-color: #ae6b9a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #F9D5BB;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #F9D5BB;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #57429b;
+}
+/* Shop Hero Section */
+.shop-hero {
+    background: url('../img/Background_shop.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center;
+    position: relative;
+}
+
+.shop-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    backdrop-filter: blur(5px); /* Adds blur effect */
+}
+
+.shop-hero h1 {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Filter Section */
+.filter-section {
+    text-align: center;
+    margin: 30px 0; 
+}
+
+.filter-btn {
+    background: #ae6b9e;
+    color: #F9D5BB;
+    padding: 12px 25px; 
+    margin: 8px;
+    border: none;
+    border-radius: 25px; /* More rounded buttons */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.filter-btn:hover {
+    background: #57429b;
+    color: #fff;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: space-evenly; /* Centers items properly */
+    flex-wrap: wrap;
+    gap: 30px; /* Adds space between rows and columns */
+    padding: 20px; /
+}
+
+.product {
+    flex: 1;
+    max-width: 30%; /* Ensures 3 products per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto; /* Allows dynamic height */
+    padding: 25px; /* Adds space around each product */
+    background: #c7a3cb;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+
+/* Adjusted product image */
+.product img {
+    width: 80%;  
+    height: 280px; 
+    object-fit: cover; /* Ensures images don't get stretched */
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.product:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Title */
+.product h3 {
+    margin: 10px 0;
+    color: #5f1736;
+    font-size: 1.2rem; /* Adjusted size for better fit */
+}
+
+/* Product Price */
+.product p {
+    color: #5f1736;
+    font-weight: bold;
+}
+
+/* Product Button */
+.product a {
+    background: #ae6b9e;
+    color: #b992be;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-top: 10px; /* Adds space between the price and the button */
+}
+
+.product a:hover {
+    background: #57429b; /* Hover effect for the button */
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #FFF5E1;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}

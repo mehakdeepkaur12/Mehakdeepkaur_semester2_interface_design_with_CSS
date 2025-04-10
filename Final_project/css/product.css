@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D4AFB9;
+    color: #5f1736;
+}
+
+/* Header */
+header {
+    background-color: #ae6b9a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #F9D5BB;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #F9D5BB;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #57429b;
+}
+/* Product Page Section */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 10px;
+    max-width: 1200px;  /* Set a max width for the container */
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    width: 100%; /* Ensures container takes full width */
+    max-width: 400px; /* Maximum image container width */
+    margin-right: 20px; 
+}
+
+.product img {
+    width: 100%;  
+    height: auto; 
+    object-fit: contain; 
+    margin-bottom: 20px;
+}
+.product-image img {
+    width: 100%;        /* Ensures the image takes the full width of the container */
+    max-width: 300px;   /* Set a maximum size for the image */
+    height: auto;      
+    object-fit: contain; 
+}
+
+@media (max-width: 768px) {
+    .product-image img {
+        max-width: 80%;  /* Make image smaller on mobile screens */
+        height: auto;    /* Maintain aspect ratio */
+    }
+}
+
+
+/* Product details layout */
+.product-details {
+    flex: 1;
+    max-width: 600px;
+}
+
+.product-details h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.product-details h3 {
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.product-details .price {
+    font-size: 24px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.product-details .description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Buy Button */
+.buy-btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.buy-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Related Books Section */
+.related-books {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.related-books h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.related-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.related-item {
+    flex: 1;
+    max-width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.related-item p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+
